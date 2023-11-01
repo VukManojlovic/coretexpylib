@@ -33,6 +33,7 @@ dependencies = [
   "typing-extensions",
   "psutil",
   "py3nvml",
+  "click",
 ]
 
 [project.urls]
@@ -47,3 +48,6 @@ exclude = ["tests*", "docs_images*", "doxygen-awesome-css*"]
 
 [tool.setuptools.package-data]
 "*" = ["py.typed"]
+
+[project.scripts]
+coretex-click = "coretex.cli.main:main"
